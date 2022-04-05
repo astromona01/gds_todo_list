@@ -9,6 +9,10 @@ yarn install
 ```
 yarn serve
 ```
+### Server Start
+```
+yarn start
+```
 
 ### Compiles and minifies for production
 ```
