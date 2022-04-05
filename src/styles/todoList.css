@@ -1,0 +1,69 @@
+.checkedIcon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: red;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.todo-list {
+  width: 500px;
+  margin: 15px auto;
+  text-align: left;
+  list-style-type: none;
+}
+
+.todo-item {
+  padding: 11px 5px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+.completed .checkedIcon {
+  background: #cccccc;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+table td {
+  padding: 3px 30px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.sort-type {
+  background: mediumseagreen;
+  color: #fff;
+}
+
+.container button:first-child {
+  position: absolute;
+  right: 477px;
+  padding: 5px;
+}
+
+.clear-button {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+button {
+  background: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=todoList.css.map */
