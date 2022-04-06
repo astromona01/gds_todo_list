@@ -13,3 +13,12 @@
     outline: none;
   }
 }
+.invalid {
+  border-color: red;
+  & input::-webkit-input-placeholder {
+    color: red;
+  }
+  & input::-moz-placeholder {
+    color: red;
+  }
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="form">
-    <div class="input-wrapper">
+    <div :class="{invalid}" class="input-wrapper">
       <input @keydown="keyDown" v-model="text" type="text" placeholder="type todo">
     </div>
     <button @click="addTodo">Add Todo</button>
@@ -12,12 +12,18 @@ import '../styles/form.css'
 export default {
   name: `Form`,
   data: () => ({
-    text: ''
+    text: '',
+    invalid: false,
   }),
   methods: {
     addTodo() {
-      this.$store.commit('addTodo', this.text)
-      this.text = '';
+      if (this.text.length) {
+        this.$store.commit('addTodo', this.text)
+        this.text = '';
+        this.invalid = false
+      } else {
+        this.invalid = true
+      }
     },
     keyDown(e) {
       if (e.keyCode === 13) {

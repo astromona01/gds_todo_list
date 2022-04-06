@@ -15,4 +15,14 @@
   outline: none;
 }
 
+.invalid {
+  border-color: red;
+}
+.invalid input::-webkit-input-placeholder {
+  color: red;
+}
+.invalid input::-moz-placeholder {
+  color: red;
+}
+
 /*# sourceMappingURL=form.css.map */
